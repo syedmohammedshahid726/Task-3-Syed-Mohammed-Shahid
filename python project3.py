@@ -2,9 +2,7 @@ import random
 import string
 
 def generate_password():
-    # ---------------------------------------------------------
-    # PHASE 1: INPUT & VALIDATION
-    # ---------------------------------------------------------
+    # 1: INPUT & VALIDATION
     print("=== DecodeLabs Enterprise Password Generator ===")
     
     try:
@@ -18,10 +16,8 @@ def generate_password():
         print("\n[!] Invalid input! Please enter a valid number.")
         print("Defaulting to a secure length of 12 characters.\n")
         length = 12
-
-    # ---------------------------------------------------------
-    # PHASE 2: PROCESS (Core Logic)
-    # ---------------------------------------------------------
+        
+    #  2: PROCESS 
     letters = string.ascii_letters
     digits = string.digits         
     symbols = string.punctuation    
@@ -31,9 +27,7 @@ def generate_password():
     password_list = random.choices(all_characters, k=length)
     secure_password = "".join(password_list)
 
-    # ---------------------------------------------------------
-    # PHASE 3: OUTPUT
-    # ---------------------------------------------------------
+    # 3: OUTPUT
     print("------------------------------------------------")
     print(f"Generated Password : {secure_password}")
     print(f"Password Length    : {length} characters")

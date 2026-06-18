@@ -24,6 +24,7 @@ This is a simple Python Password Generator that creates secure random passwords 
 
 ```bash
 python "python project3.py"
+```
 
 ## Real-Time Use Cases
 This Password Generator can be used in:
